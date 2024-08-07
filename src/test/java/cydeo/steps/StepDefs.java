@@ -48,6 +48,8 @@ public class StepDefs {
     public void i_should_see_page_title_as(String expectedTitle) {
         String actualTitle = Driver.getDriver().getTitle();
         System.out.println("actualTitle = " + actualTitle);
+
+
         Assert.assertEquals(expectedTitle,actualTitle);
     }
 
