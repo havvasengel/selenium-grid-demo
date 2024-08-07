@@ -10,9 +10,11 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber.json" ,
                 "html:target/cucumber-reports.html",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber",
+                "pretty"
                 },
         features = "src/test/resources/features",
         glue = "cydeo/steps",
-        publish = true
+        publish = true,
+        tags="@tests"
 )
 public class CukesRunner {}
